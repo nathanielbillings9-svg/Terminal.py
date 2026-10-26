@@ -1,7 +1,7 @@
 import time
 import random
 
-bm = {"1. Terminal.py", "2. end"}
+bm = ["1. Terminal.py", "2. end"]
 print("\n" * 2)
 print("\n".join(bm))
 bo = input("")
@@ -16,7 +16,7 @@ if bo == "1":
     time.sleep(random.uniform(0.3, 1.2))
     import headlines
     
-    print("headlines.py[OK]")
+    print("headlines.py [OK]")
     print("Checking dve.py...")
     time.sleep(random.uniform(0.3, 1.2))
     import dve
@@ -55,10 +55,20 @@ if bo == "1":
     print("Getting Terminal.py size...")
     time.sleep(random.uniform(3.2, 5.6))
     print("Terminal.py size: " + str(size))
-    print("Checking size via Simplecheck...")
-    time.sleep(random.uniform(1.4, 3.2))
-    if size + 86 == 900:
-        print("File Size check Succesfull, booting now...")
+    sc = input("Want to do size check? (y/n). Type "n" if a size check fails on your system")
+    ba = False
+    if sc = y:
+        print("Checking size via Simplecheck...")
+        time.sleep(random.uniform(1.4, 3.2))
+        if size + 86 == 900 or 900 + 34:
+            ba = True
+            print("File size check successfull, booting now...")
+        else:
+            ba = False
+    elif sc = n:
+        ba = True
+        print("Booting without size check...")
+    if ba = True:
         time.sleep(random.uniform(4.7, 10.4))
         print("")
         print("-------------------------------")
@@ -68,8 +78,9 @@ if bo == "1":
         print("")
 
         Terminal.terminal()
-
         print("\nThank You for using Terminal.py, bye :)")
+else:
+    print("Failed size check")
 elif bo == "2":
     print("Exiting...")
     print("Bye :)")
