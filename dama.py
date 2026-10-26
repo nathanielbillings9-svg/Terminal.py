@@ -2,9 +2,7 @@ index = "index.txt"
 File = "data.txt"
 free = "FREE"
 sinfo = "sysinfo.txt"
-sinfoindex = {
-"version" : 0
-}
+sinfoindex = {"version": 0}
 
 
 def write(name, data):
@@ -13,7 +11,7 @@ def write(name, data):
     rl = None
     for lr in l:
         if lr.startswith(free + " "):
-            il = lr[len(free):]
+            il = lr[len(free) :]
             rl = int(il)
             l[rl] = name + " " + str(rl) + "\n"
             f.seek(0)
@@ -38,6 +36,7 @@ def write(name, data):
         f.writelines(l)
         f.truncate()
         f.close()
+    return None
 
 
 def read(name):
@@ -46,7 +45,7 @@ def read(name):
     rl = None
     for lr in l:
         if lr.startswith(name + " "):
-            il = lr[len(name):]
+            il = lr[len(name) :]
             rl = int(il)
             break
     f.close()
@@ -78,6 +77,7 @@ def change(name, data):
     f.writelines(l)
     f.truncate()
     f.close()
+    return None
 
 
 def delete(name):
@@ -103,6 +103,7 @@ def delete(name):
     f.writelines(l)
     f.truncate()
     f.close()
+    return None
 
 
 def show(mode):
@@ -131,3 +132,5 @@ def getsysinfo(sinfoname):
     l = f.readlines()
     f.close()
     return l[sinfoindex[sinfoname]]
+
+

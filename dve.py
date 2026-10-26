@@ -1,7 +1,6 @@
 def dve():
     import dama
 
-
     while True:
         instr = input("dve:")
         if instr == "exit":
