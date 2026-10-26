@@ -2,7 +2,7 @@ from dama import show
 from headlines import headline as hl
 
 
-options = {"1. Show Index Filecontents", "2. Show Data Filecontents"}
+options = ["1. Show Index Filecontents", "2. Show Data Filecontents", "3. Exit"]
 
 
 def dv():
@@ -17,3 +17,5 @@ def dv():
             print("")
             hl("Data", False, False, True, True)
             print("\n".join(show("d")))
+        elif o == "3":
+            break
