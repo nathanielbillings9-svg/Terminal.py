@@ -2,7 +2,7 @@ TERMINAL.py
 
 A small Python terminal project.
 
-Version: BETA 2.1.2
+Version: BETA 2.2.0
 Status: Beta
 
 About
