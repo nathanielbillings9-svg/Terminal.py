@@ -55,20 +55,20 @@ if bo == "1":
     print("Getting Terminal.py size...")
     time.sleep(random.uniform(3.2, 5.6))
     print("Terminal.py size: " + str(size))
-    sc = input("Want to do size check? (y/n). Type "n" if a size check fails on your system")
+    sc = input('Want to do size check? (y/n). Type "n" if a size check fails on your system')
     ba = False
-    if sc = y:
+    if sc == "y":
         print("Checking size via Simplecheck...")
         time.sleep(random.uniform(1.4, 3.2))
-        if size + 86 == 900 or 900 + 34:
+        if size + 86 == 900 or size + 86 == 934:
             ba = True
             print("File size check successfull, booting now...")
         else:
             ba = False
-    elif sc = n:
+    elif sc == "n":
         ba = True
         print("Booting without size check...")
-    if ba = True:
+    if ba:
         time.sleep(random.uniform(4.7, 10.4))
         print("")
         print("-------------------------------")
@@ -79,8 +79,8 @@ if bo == "1":
 
         Terminal.terminal()
         print("\nThank You for using Terminal.py, bye :)")
-else:
-    print("Failed size check")
+    else:
+        print("Failed size check")
 elif bo == "2":
     print("Exiting...")
     print("Bye :)")
