@@ -2,7 +2,7 @@ TERMINAL.py
 
 A small Python terminal project.
 
-Version: BETA 1.1.0
+Version: BETA 2.1.1
 Status: Beta
 
 About
@@ -20,10 +20,12 @@ Components
 * vdc.py – Voltage Divider Calculator, a utility for calculating voltage dividers using resistor values
 * ps.py – Program starting functionality
 * headlines.py – Utility for standardized section headings
+* dv.py - DAMA data viewer so you can see what is inside the data.txt and index.txt file.
+* calc.py - a simple python calcualtor
 
 Requirements
 
-* Python 3
+* Python 3, and the packages pyfiglet, os, time and random
 * A compatible environment for running the project
 
 Running
